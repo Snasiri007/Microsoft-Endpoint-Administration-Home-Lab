@@ -120,4 +120,4 @@ Planned labs:
 
 ## Objective
 
-Build practical hands-on experience with Microsoft endpoint administration, identity management, security, and troubleshooting while preparing for Microsoft MD-102 and future cloud administration work.
+Build practical hands-on experience in Microsoft endpoint administration, identity and access management, security, and troubleshooting using Windows, Microsoft Entra ID, PowerShell, and Intune while preparing for MD-102 and future cloud administration roles.
