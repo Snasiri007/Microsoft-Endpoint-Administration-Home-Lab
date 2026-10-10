@@ -12,7 +12,6 @@ Hands-on lab focused on Windows administration, Microsoft Entra ID, identity and
 - PowerShell
 
 ## Skills Demonstrated
-
 - Windows 11 administration
 - Local user and group management
 - Password resets and account lockout troubleshooting
@@ -29,6 +28,15 @@ Hands-on lab focused on Windows administration, Microsoft Entra ID, identity and
 - Session revocation
 - Account enable/disable and recovery
 - RBAC and least-privilege administration
+-  Microsoft Intune device enrollment
+- Mobile Device Management (MDM)
+- Intune Settings Catalog configuration profiles
+- Windows compliance policies
+- Microsoft Store application deployment
+- Windows Update Rings
+- Microsoft Defender Antivirus policy management
+- Intune device and user troubleshooting
+- Endpoint compliance and deployment reporting
 
 ## Lab Projects
 
@@ -103,20 +111,100 @@ Assigned a temporary Helpdesk Administrator role, tested administrative access, 
 
 *Removed the privileged role after testing and verified that no directory roles remained assigned.*
 
-## Intune
+## Microsoft Intune Endpoint Administration
 
-**Status: In Progress**
+Completed hands-on Microsoft Intune administration using the Windows 11 lab endpoint `DEPLOY-01`.
 
-Planned labs:
+### 14 - Windows Device Enrollment
+Enrolled `DEPLOY-01` into Microsoft Intune and verified the endpoint was actively managed.
 
-- Windows device enrollment
-- Device inventory
-- Configuration profiles
-- Compliance policies
-- Application deployment
-- Windows update rings
-- Endpoint security
-- Policy and application troubleshooting
+Key tasks:
+- Connected the lab work account to Windows
+- Enabled automatic MDM enrollment
+- Verified Intune management status
+- Confirmed device inventory and compliance reporting
+
+### 15 - Configuration Profile Deployment
+Created and deployed a device-targeted Settings Catalog policy to `DEPLOY-01`.
+
+Configured:
+- Camera access disabled through Intune
+- Policy assigned to managed devices
+- Device sync initiated manually
+- Deployment verified successfully in Intune reporting
+
+![Intune configuration profile deployment success](screenshots/intune-configuration-profile-success.png)
+
+*Verified the device-targeted configuration profile successfully applied to DEPLOY-01 with no errors or conflicts.*
+
+### 16 - Device Compliance
+Created a Windows compliance policy to evaluate endpoint security requirements.
+
+Configured:
+- Password requirement
+- Simple password restriction
+- Minimum password length
+- Immediate noncompliance evaluation
+
+Verified `DEPLOY-01` reported as compliant in Microsoft Intune.
+
+![Intune device compliance](screenshots/intune-device-compliance.png)
+
+*Verified DEPLOY-01 met the configured compliance requirements.*
+
+### 17 - Application Deployment
+Deployed Microsoft Company Portal through Intune using the Microsoft Store app deployment workflow.
+
+Configured:
+- Install behavior: System
+- Required assignment to managed devices
+- Manual device synchronization
+
+![Company Portal deployment](screenshots/intune-company-portal-installed.png)
+
+*Verified Company Portal installed successfully on DEPLOY-01 through Intune.*
+
+### 18 - Windows Update Management
+Created and deployed a Windows Update Ring.
+
+Configured:
+- Microsoft product updates allowed
+- Windows driver updates allowed
+- Quality update deferral: 0 days
+- Feature update deferral: 7 days
+- Active hours: 8 AM–5 PM
+- Automatic installation during maintenance time
+
+![Windows Update Ring deployment](screenshots/intune-update-ring-success.png)
+
+*Verified the Windows Update Ring successfully applied to DEPLOY-01.*
+
+### 19 - Endpoint Security
+Created and deployed a Microsoft Defender Antivirus policy.
+
+Configured:
+- Cloud protection
+- Real-time monitoring
+- Automatic safe sample submission
+- Potentially unwanted application protection
+
+![Microsoft Defender Antivirus policy](screenshots/intune-defender-policy-success.png)
+
+*Verified the Defender Antivirus policy successfully applied with no errors or conflicts.*
+
+### 20 - Intune Troubleshooting and Reporting
+Used Intune Troubleshooting + Support to investigate user and endpoint health.
+
+Verified:
+- LAB User 1 was enabled and Intune licensed
+- DEPLOY-01 was actively managed by Intune
+- Intune compliance: Compliant
+- Microsoft Entra compliance: Compliant
+- Application lifecycle status: Success
+
+![Intune troubleshooting and support](screenshots/intune-troubleshooting-report.png)
+
+*Used Intune troubleshooting reports to verify endpoint compliance, management status, and application health.*
 
 ## Objective
 
