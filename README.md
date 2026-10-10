@@ -148,9 +148,7 @@ Configured:
 
 Verified `DEPLOY-01` reported as compliant in Microsoft Intune.
 
-![Intune device compliance](screenshots/intune-device-compliance.png)
-
-*Verified DEPLOY-01 met the configured compliance requirements.*
+*Verification: `DEPLOY-01` reported Compliant in Microsoft Intune during the lab. The dedicated policy screenshot was not retained.*
 
 ### 17 - Application Deployment
 Deployed Microsoft Company Portal through Intune using the Microsoft Store app deployment workflow.
