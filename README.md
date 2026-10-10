@@ -28,7 +28,7 @@ Hands-on lab focused on Windows administration, Microsoft Entra ID, identity and
 - Session revocation
 - Account enable/disable and recovery
 - RBAC and least-privilege administration
--  Microsoft Intune device enrollment
+- Microsoft Intune device enrollment
 - Mobile Device Management (MDM)
 - Intune Settings Catalog configuration profiles
 - Windows compliance policies
