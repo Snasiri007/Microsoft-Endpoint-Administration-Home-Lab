@@ -146,9 +146,7 @@ Configured:
 - Minimum password length
 - Immediate noncompliance evaluation
 
-Verified `DEPLOY-01` reported as compliant in Microsoft Intune.
-
-*Verification: `DEPLOY-01` reported Compliant in Microsoft Intune during the lab. The dedicated policy screenshot was not retained.*
+During lab testing, `DEPLOY-01` reported **Compliant** in Microsoft Intune. A dedicated compliance screenshot was not retained.
 
 ### 17 - Application Deployment
 Deployed Microsoft Company Portal through Intune using the Microsoft Store app deployment workflow.
